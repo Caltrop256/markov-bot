@@ -1,0 +1,25 @@
+{
+    "token": "bot token",
+
+    "guilds": {
+        "guildId1": {
+            "enabled": true,
+            "label": "testing server",
+            "channels": [
+                "optional guild label"
+            ],
+            "responseChance": 1,
+            "replyChance": 0.25
+        },
+        "guildId2": {
+            "enabled": false,
+            "label": "optional guild label",
+            "channels": [
+                "channel id 1",
+                "channel id 2"
+            ],
+            "responseChance": 0.02,
+            "replyChance": 0.75
+        }
+    }
+}
