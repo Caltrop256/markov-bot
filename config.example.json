@@ -2,24 +2,47 @@
     "token": "bot token",
 
     "guilds": {
-        "guildId1": {
+        "559034305456898048": {
             "enabled": true,
-            "label": "testing server",
+            "label": "Testing",
+
+            "triggerChance": 1,
+
             "channels": [
-                "optional guild label"
-            ],
-            "responseChance": 1,
-            "replyChance": 0.25
+                "559034705459150848"
+            ]
         },
-        "guildId2": {
-            "enabled": false,
-            "label": "optional guild label",
+
+        "689617377301889039": {
+            "enabled": true,
+            "label": "CHQ",
+
+            "triggerChance": 0.02,
+
             "channels": [
-                "channel id 1",
-                "channel id 2"
-            ],
-            "responseChance": 0.02,
-            "replyChance": 0.75
+                "689617377939292328",
+                "787345956634361856",
+                "694369541832310834",
+                "701476196457644113",
+                "896364556350283836",
+                "878765738901512252",
+                "759846397079715881",
+                "759607702267101214",
+                "690642390398140416",
+                "760837905722769431"
+            ]
+        },
+        "562324876330008576": {
+            "enabled": true,
+            "label": "fluff",
+
+            "triggerChance": 0.015,
+
+            "channels": [
+                "562324876837388294",
+                "792855995654995998",
+                "676419869490675722"
+            ]
         }
     }
 }
