@@ -427,8 +427,6 @@ class Markov {
 
     export() {
         const matrix = this.matrix.serialize();
-        matrix.size1d = this.stored;
-        matrix.size = this.stored * this.stored;
         return {
             tokens: Array.from(this.nodes).map(([key]) => key),
             matrix
@@ -442,8 +440,6 @@ class Markov {
             this.indexToIdentifier.push(data.tokens[this.stored]);
             this.nodes.set(data.tokens[this.stored], this.stored);
         }
-        data.matrix.size1d = this.stored;
-        data.matrix.size = this.stored * this.stored;
         this.matrix = new SparseMatrix(data.matrix);
     }
 }

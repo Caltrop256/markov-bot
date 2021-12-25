@@ -1,11 +1,18 @@
-import MarkovBot from './bot.js';
+import MarkovDiscordBot from "./bot.js";
 import { createRequire } from 'module';
+import _ from './log.js';
+
 const config = createRequire(import.meta.url)('./config.json');
 
-const client = new MarkovBot(config);
+const client = new MarkovDiscordBot(config);
+client.on('ready', () => {
+
+});
 
 for (const sig of ['SIGTERM', 'SIGINT']) process.on(sig, () => {
+    console.log();
     client.store();
+    process.stdout.write('\n');
     process.exit(0);
 });
 
